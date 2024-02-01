@@ -13,7 +13,6 @@
                 <tr>
                     <th>Item</th>
                     <th>Nombre</th>
-                    <th>Actualizado en:</th>
                     <th>tipo</th>
                     <th style="width: 25%;">Acciones</th>
                 </tr>
@@ -24,12 +23,9 @@
                         <tr>
                             <td>{{$index + 1 }}</td>
                             <td>{{$archivo->getName()}}</td>
-                            <td>{{date("F d Y", strtotime($archivo->modifiedTime))}}</td>
                             <td>{{$archivo->getMimeType()}}</td>
                             <td>
                                 <x-buttons :archivo="$archivo"/>
-                                <p>{{$archivo->getId()}}</p>
-                                @include('modal.edit',['id' => $archivo->getId()])
                             </td>
                         </tr>
                     @endforeach

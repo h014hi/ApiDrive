@@ -276,7 +276,6 @@ class FileController extends Controller
         }
     }
 
-
     public function shareFiles(Request $request, $id){
         try {
             $driveServiceData = $this->getDriveService();
@@ -341,8 +340,6 @@ class FileController extends Controller
             return redirect()->back()->with('error', 'Error al eliminar el acceso.');
         }
     }
-
-
 
     /**
      * Display a listing of the resource.

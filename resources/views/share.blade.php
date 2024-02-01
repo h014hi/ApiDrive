@@ -16,8 +16,6 @@
                         <option value="reader">Lector</option>
                         <option value="commenter">Comentador</option>
                         <option value="writer">Escritor</option>
-                        <option value="fileOrganizer">Organizador de Archivos</option>
-                        <option value="organizer">Organizador</option>
                     </select>
                 </div>
                 <button class="btn btn-success" type="submit">Compartir Archivo</button>
